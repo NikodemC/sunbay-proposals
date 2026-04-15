@@ -1,7 +1,3 @@
----
-title: Dataset Builder — multi-source data integration
----
-
 # Dataset Builder — łączenie danych z integracji, Google Sheets i regułami
 
 ## Context
@@ -10,7 +6,7 @@ Potrzebujemy modułu w Sunbay, który pozwoli **łączyć dane z wielu źródeł
 
 Dostarczamy w dwóch iteracjach:
 
-- **v1 (MVP, szybko)** — edytor SQL dla power-usera/admina. Jeden datasource + jeden edytor SQL + run + preview + export. Dostarczamy wartość natychmiast dla osób technicznych; produkt można użyć w wewnętrznych procesach jeszcze zanim powstanie wizualny UI.
+- **v1 (MVP, szybko)** — edytor SQL dla power-usera/admina. Wiele źródeł danych (każde dostaje alias = nazwę tabeli w DuckDB) + jeden edytor SQL gdzie je łączysz dowolnie (JOIN/UNION/CASE WHEN/podzapytania) + run + preview + export. Dostarczamy wartość natychmiast dla osób technicznych; produkt można użyć w wewnętrznych procesach jeszcze zanim powstanie wizualny UI.
 - **v2 (dla nietechnicznych)** — wizualny pipeline-builder (Join / Filter / If-Then / Formula / Select / Sort). **Kluczowe**: v2 rozszerza v1, nie przepisuje go. Ta sama baza danych, ten sam runtime, ten sam compiler. Dochodzą tylko nowe typy kroków i nowe karty UI.
 
 Kontekst techniczny Sunbay:
